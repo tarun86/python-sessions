@@ -1,0 +1,6 @@
+#git config --global user.name mysterio86
+#git add -p
+#Dgit log -n <limit>
+#git log --oneline
+#git log --stat
+#
