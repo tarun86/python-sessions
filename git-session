@@ -3,4 +3,26 @@
 #Dgit log -n <limit>
 #git log --oneline
 #git log --stat
+#git log -p
+#igit log --author="<pattern>"
+#git log --grep="<pattern>"
+#git log <since>..<until>
+#git log filr
+#git log --graph --decorate --oneline
 #
+#
+#This ID can be used in commands like git log <since>..<until> to refer to specific commits. For instance, git log 3157e..5ab91 will display everything between the commits with ID's 3157e and 5ab91. Aside from checksums, branch names (discussed in the Branch Module) and the HEAD keyword are other common methods for referring to individual commits. HEAD always refers to the current commit, be it a branch or a specific commit.
+#
+#The ~ character is useful for making relative references to the parent of a commit. For example, 3157e~1 refers to the commit before 3157e, and HEAD~3 is the great-grandparent of the current commit.
+#
+
+#
+#Example
+#The Usage section provides many examples of git log, but keep in mind that several options can be combined into a single command:
+#
+#git log --author="John Smith" -p hello.py
+#This will display a full diff of all the changes John Smith has made to the file hello.py.
+#
+#The .. syntax is a very useful tool for comparing branches. The next example displays a brief overview of all the commits that are in some-feature that are not in master.
+#
+#git log --oneline master..some-feature
