@@ -360,3 +360,4 @@
 #Using git reset it is then possible to change master back to the commit it was before. This provides a safety net in case history was accidentially changed.
 #
 #It's important to note that the reflog only provides a safety net if changes have been commited to your local repository and that it only tracks movements.
+#
