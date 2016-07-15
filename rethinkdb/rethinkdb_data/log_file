@@ -1,0 +1,21 @@
+2016-07-15T17:43:47.305577944 10.367150s notice: Recursively removing directory /home/tarunbaloch/Git/python-sessions/rethinkdb/rethinkdb_data/tmp
+2016-07-15T17:43:47.331382355 10.392953s notice: Initializing directory /home/tarunbaloch/Git/python-sessions/rethinkdb/rethinkdb_data
+2016-07-15T17:43:47.331485872 10.393057s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/tarunbaloch/Git/python-sessions/rethinkdb/rethinkdb_data' did not already exist or is empty.)
+2016-07-15T17:43:47.331510189 10.393081s notice: Running rethinkdb 2.3.4~0xenial (GCC 5.3.1)...
+2016-07-15T17:43:47.334256675 10.395831s notice: Running on Linux 4.4.0-28-generic x86_64
+2016-07-15T17:43:47.334314844 10.395885s notice: Loading data from directory /home/tarunbaloch/Git/python-sessions/rethinkdb/rethinkdb_data
+2016-07-15T17:43:47.669912124 10.731483s info: Automatically using cache size of 1428 MB
+2016-07-15T17:43:47.670817950 10.732389s notice: Listening for intracluster connections on port 29015
+2016-07-15T17:43:47.717950488 10.779521s notice: Listening for client driver connections on port 28015
+2016-07-15T17:43:47.718069678 10.779640s notice: Listening for administrative HTTP connections on port 8080
+2016-07-15T17:43:47.718075710 10.779646s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-15T17:43:47.718077907 10.779648s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-15T17:43:47.718081113 10.779652s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2016-07-15T17:43:47.718082919 10.779653s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-15T17:43:47.718086319 10.779657s notice: Server ready, "AutoNinja_ofw" c83c255e-0619-46dd-880c-f7b230f1e57d
+2016-07-15T17:53:25.145599482 588.207171s info: Table 57a97a11-6e89-4bd3-82cb-55dfff34eee6: Added replica on this server.
+2016-07-15T17:53:25.145610235 588.207181s info: Table 57a97a11-6e89-4bd3-82cb-55dfff34eee6: Starting a new Raft election for term 1.
+2016-07-15T17:53:25.232031600 588.293603s info: Table 57a97a11-6e89-4bd3-82cb-55dfff34eee6: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-15T17:54:27.451012836 650.512584s info: Table b2769351-7255-4dc7-ad73-5fd3e261d2fa: Starting a new Raft election for term 1.
+2016-07-15T17:54:27.451224940 650.512796s info: Table b2769351-7255-4dc7-ad73-5fd3e261d2fa: Added replica on this server.
+2016-07-15T17:54:27.499390479 650.560961s info: Table b2769351-7255-4dc7-ad73-5fd3e261d2fa: This server is Raft leader for term 1. Latest log index is 0.

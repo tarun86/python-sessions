@@ -53,8 +53,15 @@ class customer_segmentation():
         # self.data_frame['avg_run_per_day']= self.data_frame['mileage'] / self.data_frame['days']
 
     def get_typeof_service(self, service):
-        return self.data_frame.ix[self.data_frame['service_type'] == service,:]
+        return self.data_frame [self.data_frame['service_type'] == service]
         # customer_fr2 = self.data_frame.ix[self.data_frame['service_type']=='FR2',:]
+
+    def quantile_filtering(self, obj, low = 0.025, high = 0.975, keys = ['days', 'mileage']):
+        print "SHape of the object : {}".format(obj.shape)
+        for key in keys:
+            obj = obj[obj[key] > obj[key].quantile(low)]
+            obj = obj[obj[key] < obj[key].quantile(high)]
+        print "SHape of the object : {}".format(obj.shape)
 
     def set_typeof_service(self, service, index="car_id"):
         if(service == "FR1"):
@@ -65,13 +72,19 @@ class customer_segmentation():
             self.customer_fr2 = self.get_typeof_service(service)
             self.customer_fr2 = self.customer_fr2.set_index(index)
 
+        if(service == "FR3"):
+            self.customer_fr3 = self.get_typeof_service(service)
+            self.customer_fr3 = self.customer_f3.set_index(index)
 def main():
     try:
         data_analysis = customer_segmentation()
         data_analysis.read_csv('customer.csv')
         group_by_cols = ['car_id','service_type']
         data_analysis.group_by(group_by_cols)
-        # data_analysis.derived_features()
+        data_analysis.derived_features()
+        data_analysis.set_typeof_service('FR1')
+        data_analysis.set_typeof_service('FR2')
+        data_analysis.quantile_filtering(data_analysis.customer_fr1)
         print "hello world"
         return data_analysis
         # print data_analysis.group_by_obj
